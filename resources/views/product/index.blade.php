@@ -13,8 +13,8 @@
                 <div class="card-body">
                     <h2>{{$product->name}}</h2>
                     <p>{{$product->price}}円</p>
-                    <a href="/product/edit/{{$product->id}}" class="btn btn-success">編集</a>
-                    <a href="/product/delete/{{$product->id}}" class="btn btn-danger">削除</a>
+                    <a href="/product/edit/{{$post->id}}" class="btn btn-success">編集</a>
+                    <a href="/product/delete/{{$post->id}}" class="btn btn-danger">削除</a>
                 </div>
             </div>
         </div>
