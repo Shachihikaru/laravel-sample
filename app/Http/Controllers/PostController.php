@@ -23,12 +23,12 @@ class PostController extends Controller
     }
     
     public function edit($id){
-        $posts = Post::where('id','=',$id)->first();
+        $post = Post::where('id','=',$id)->first();
         return view("post/edit",compact('post'));
     }
     
     public function update(Request $request,$id){
-        $posts = Post::where('id','=',$id)->first();
+        $post = Post::where('id','=',$id)->first();
         $post->content = $request ->content;
         $post->save();
         return redirect('/post');
