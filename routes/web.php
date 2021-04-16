@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 Route::get('/profile', 'ProfileController@index');
 Route::get('/hobby', 'ProfileController@hobby');
 Route::get('/bmi', 'BmiController@index');
